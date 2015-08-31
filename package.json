@@ -1,6 +1,6 @@
 {
   "name": "strip-passwords",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Strip passwords from an object",
   "main": "index.js",
   "scripts": {
