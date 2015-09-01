@@ -81,3 +81,19 @@ tests.forEach(function(tester) {
     t.end()
   })
 })
+
+test('should work with custom replace string', function(t) {
+  var input = {
+    name: 'test'
+  , password: 'test'
+  }
+  var exp = {
+    name: 'test'
+  , password: '____'
+  }
+  var out = clean(input, {
+    replace: '____'
+  })
+  t.deepEqual(out, exp)
+  t.end()
+})
