@@ -18,7 +18,18 @@ var clean = require('strip-passwords')
 
 clean({ password: 'test' })
 // => { password: '****' }
+
+// or pass options
+clean({ password: 'test' }, {
+  replace: '____'
+})
+// => { password: '____' }
 ```
+
+### Options
+
+- `replace`: The string to use for replacement
+
 
 ## Author
 
