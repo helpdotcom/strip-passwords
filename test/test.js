@@ -27,6 +27,7 @@ var tests = [
       meta: {}
     , data: {
         meta: {}
+      , thing: null
       , data: {
           email: 'biscuits'
         , password: 'password'
@@ -37,6 +38,7 @@ var tests = [
       meta: {}
     , data: {
         meta: {}
+      , thing: null
       , data: {
           email: 'biscuits'
         , password: '****'
