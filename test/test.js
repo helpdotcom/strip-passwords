@@ -99,3 +99,20 @@ test('should work with custom replace string', function(t) {
   t.deepEqual(out, exp)
   t.end()
 })
+
+test('should work with custom template for replace', function(t) {
+  var input = {
+    name: 'test'
+  , custom_password: 'test'
+  }
+  var exp = {
+    name: 'test'
+  , custom_password: '____'
+  }
+  var out = clean(input, {
+    replace: '____',
+    template: 'custom_password',
+  })
+  t.deepEqual(out, exp)
+  t.end()
+})
